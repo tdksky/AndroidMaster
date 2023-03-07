@@ -5,31 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
+    android:background="@color/background_component"
     tools:context=".tdksky.MenuActivity">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSaludApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/background_btn_principal"
         android:text="SaludApp"
         android:textColor="#ffffff"
-        android:background="#0A2ADD"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnIMCApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:background="@color/background_btn_principal"
         android:text="IMC App"
         android:textColor="#ffffff"
-        android:background="#0A2ADD"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnSaludApp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaludApp" />
 
-        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTODO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/background_btn_principal"
+        android:text="TODO App"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIMCApp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

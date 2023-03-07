@@ -9,6 +9,7 @@ import com.tdksky.androidmaster.R
 import com.tdksky.androidmaster.R.id
 import com.tdksky.androidmaster.tdksky.firstapp.FirstAppActivity
 import com.tdksky.androidmaster.tdksky.imccalculator.ImcCalculatorActivity
+import com.tdksky.androidmaster.tdksky.todoapp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,12 +17,17 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
         val btnSaludApp = findViewById<AppCompatButton>(R.id.btnSaludApp)
         val btnIMCApp = findViewById<AppCompatButton>(R.id.btnIMCApp)
-
+        val btnTODO = findViewById<AppCompatButton>(R.id.btnTODO)
 
         btnSaludApp.setOnClickListener { navigateToSaludApp() }
         btnIMCApp.setOnClickListener{navigateToImcApp()}
+        btnTODO.setOnClickListener{navigateToTodoApp()}
 
+    }
 
+    private fun navigateToTodoApp() {
+        val intent = Intent(this, TodoActivity::class.java )
+        startActivity(intent)
     }
 
     private fun navigateToImcApp() {
