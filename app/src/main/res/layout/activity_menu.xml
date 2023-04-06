@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/background_btn_principal"
-        android:text="SaludApp"
+        android:text="@string/saludapp"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:background="@color/background_btn_principal"
-        android:text="IMC App"
+        android:text="@string/imc_app"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -40,12 +40,24 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:background="@color/background_btn_principal"
-        android:text="TODO App"
+        android:text="@string/todo_app"
         android:textColor="#ffffff"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnIMCApp" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSuperHero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/background_btn_principal"
+        android:text="@string/super_hero_app"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

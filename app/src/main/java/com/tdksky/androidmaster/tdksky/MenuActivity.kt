@@ -9,6 +9,7 @@ import com.tdksky.androidmaster.R
 import com.tdksky.androidmaster.R.id
 import com.tdksky.androidmaster.tdksky.firstapp.FirstAppActivity
 import com.tdksky.androidmaster.tdksky.imccalculator.ImcCalculatorActivity
+import com.tdksky.androidmaster.tdksky.superheroapp.SuperHeroListActivity
 import com.tdksky.androidmaster.tdksky.todoapp.TodoActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -18,15 +19,17 @@ class MenuActivity : AppCompatActivity() {
         val btnSaludApp = findViewById<AppCompatButton>(R.id.btnSaludApp)
         val btnIMCApp = findViewById<AppCompatButton>(R.id.btnIMCApp)
         val btnTODO = findViewById<AppCompatButton>(R.id.btnTODO)
+        val btnSuperHero = findViewById<AppCompatButton>(R.id.btnSuperHero)
 
         btnSaludApp.setOnClickListener { navigateToSaludApp() }
-        btnIMCApp.setOnClickListener{navigateToImcApp()}
-        btnTODO.setOnClickListener{navigateToTodoApp()}
+        btnIMCApp.setOnClickListener { navigateToImcApp() }
+        btnTODO.setOnClickListener { navigateToTodoApp() }
+        btnSuperHero.setOnClickListener { navigateToSuperHeroApp() }
 
     }
 
     private fun navigateToTodoApp() {
-        val intent = Intent(this, TodoActivity::class.java )
+        val intent = Intent(this, TodoActivity::class.java)
         startActivity(intent)
     }
 
@@ -35,8 +38,14 @@ class MenuActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun navigateToSaludApp(){
+    private fun navigateToSaludApp() {
         val intent = Intent(this, FirstAppActivity::class.java)
         startActivity(intent)
     }
+
+    private fun navigateToSuperHeroApp() {
+        val intent = Intent(this, SuperHeroListActivity::class.java)
+        startActivity(intent)
+    }
+
 }
